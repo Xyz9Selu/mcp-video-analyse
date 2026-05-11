@@ -1,0 +1,18 @@
+[project]
+name = "mcp-video-analyse"
+version = "0.1.0"
+description = "MCP service for video analysis using QWen Omni model via Alibaba Bailian"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=1.0.0",
+    "openai>=1.0.0",
+    "python-dotenv>=1.0.0",
+    "boto3>=1.35.0",
+]
+
+[build-system]
+requires = ["setuptools>=69.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["server"]
